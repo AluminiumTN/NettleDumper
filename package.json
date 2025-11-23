@@ -1,0 +1,24 @@
+{
+  "name": "nettle-dumper",
+  "version": "1.0.0",
+  "description": "Runtime IL2CPP dumper for ZenlessHuiZini",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "frida-compile src/index.js -o dist/dump.js",
+    "watch": "frida-compile src/index.js -o dist/dump.js -w",
+    "compile": "frida-compile src/index.js -o -",
+    "dump": "npm run build && frida -f \"D:\\ZenlessZoneZero Game\\ZenlessZoneZero.exe\" -l dist/dump.js",
+    "dump:attach": "npm run build && frida ZenlessZoneZero.exe -l dist/dump.js",
+    "test": "npm run build && frida -f \"D:\\ZenlessZoneZero Game\\ZenlessZoneZero.exe\" -l dist/dump.js",
+    "clean": "rimraf dist/*.js dump.cs"
+  },
+  "author": "kksar",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "frida-compile": "^19.0.4"
+  }
+}

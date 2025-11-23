@@ -1,0 +1,48 @@
+export const CONSTANTS = {
+    TYPE_ATTRIBUTE: {
+        VISIBILITY_MASK: 0x00000007,
+        NOT_PUBLIC: 0x00000000,
+        PUBLIC: 0x00000001,
+        NESTED_PUBLIC: 0x00000002,
+        NESTED_PRIVATE: 0x00000003,
+        NESTED_FAMILY: 0x00000004,
+        NESTED_ASSEMBLY: 0x00000005,
+        NESTED_FAM_AND_ASSEM: 0x00000006,
+        NESTED_FAM_OR_ASSEM: 0x00000007,
+        INTERFACE: 0x00000020,
+        ABSTRACT: 0x00000080,
+        SEALED: 0x00000100
+    },
+
+    METHOD_ATTRIBUTE: {
+        MEMBER_ACCESS_MASK: 0x0007,
+        COMPILER_CONTROLLED: 0x0000,
+        PRIVATE: 0x0001,
+        FAM_AND_ASSEM: 0x0002,
+        ASSEM: 0x0003,
+        FAMILY: 0x0004,
+        FAM_OR_ASSEM: 0x0005,
+        PUBLIC: 0x0006,
+        STATIC: 0x0010,
+        FINAL: 0x0020,
+        VIRTUAL: 0x0040,
+        ABSTRACT: 0x0400,
+        VTABLE_LAYOUT_MASK: 0x0100,
+        REUSE_SLOT: 0x0000,
+        NEW_SLOT: 0x0100,
+        PINVOKE_IMPL: 0x2000
+    },
+
+    FIELD_ATTRIBUTE: {
+        LITERAL: 0x0040,
+        INIT_ONLY: 0x0020,
+        STATIC: 0x10,
+        COMPILER_CONTROLLED: 0,
+        PRIVATE: 1,
+        FAM_AND_ASSEM: 2,
+        ASSEMBLY: 3,
+        FAMILY: 4,
+        FAM_OR_ASSEM: 5,
+        PUBLIC: 6
+    }
+};
