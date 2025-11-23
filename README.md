@@ -1,4 +1,4 @@
-# NettleDumper - Zero Zenless Zone
+# NettleDumper - Zero Zenless Zone 
 
 
 > [!WARNING]
@@ -15,7 +15,7 @@ After witnessing the situation with Genshin Impact, where open-sourcing similar 
 I've decided to keep offsets private to prevent Zenless Zone Zone from becoming another mainstream flooded with paste developers and scammers.
 
 ### 1. Installing
-
+#### Firstly you need to install Frida and Node!
 ```bash
 npm install
 ```
@@ -50,7 +50,7 @@ npm run dump:attach > dump.cs
 frida-compile src/index.js -o dist/dump.js
 
 # 2: Launcg
-frida -f "urs\path-to\ZoneZenlessZero.exe" -l dist/dump.js --no-pause > dump.cs
+frida -f "urs\path-to\ZoneZenlessZero.exe" -l dist/dump.js > dump.cs
 ```
 
 ## Settings
@@ -80,7 +80,7 @@ ClassDumper.dumpClasses(999999);
 In `package.json`:
 
 ```json
-"dump": "npm run build && frida -f \"urs\\path-to\\game.exe\" -l dist/dump.js --no-pause"
+"dump": "npm run build && frida -f \"urs\\path-to\\game.exe\" -l dist/dump.js"
 ```
 
 ### API's location
