@@ -119,3 +119,12 @@ public class PlayerController
 }
 ```
 
+## References
+
+- [GracefulDumper](https://github.com/thexeondev/GracefulDumper)
+- [libil2cpp](https://github.com/MlgmXyysd/libil2cpp)
+- [EclipseDumper](https://github.com/Yoshk4e/EclipseeDumper)
+- [IL2CPPRuntimeDumper](https://github.com/lilmayofuksu/Il2CppRuntimeDumper)
+- some old dumper version from [@how_to_6a756d70](https://discord.com/channels/@me/1442939841573687387)
+
+
