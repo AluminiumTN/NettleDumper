@@ -43,12 +43,12 @@ export class PropertyDumper {
 
                 try {
                     let encGetter = propertyInfoPtr.add(OFFSETS.PROPERTY.GETTER).readU64();
-                    getterMethodPtr = ptr(encGetter.sub(OFFSETS.PROPERTY.GETTER_DECRYPT_KEY).toString());
+                    getterMethodPtr = ptr(encGetter.xor(OFFSETS.PROPERTY.GETTER_DECRYPT_KEY).toString());
                 } catch (e) {}
 
                 try {
                     let encSetter = propertyInfoPtr.add(OFFSETS.PROPERTY.SETTER).readU64();
-                    setterMethodPtr = ptr(encSetter.sub(OFFSETS.PROPERTY.SETTER_DECRYPT_KEY).toString());
+                    setterMethodPtr = ptr(encSetter.xor(OFFSETS.PROPERTY.SETTER_DECRYPT_KEY).toString());
                 } catch (e) {}
 
                 try {

@@ -98,6 +98,11 @@ FUNCTIONS = {
 ## dump.cs format
 
 ```csharp
+// Modules List:
+// Image 0: mscorlib - 0
+
+
+
 // Module: Assembly-CSharp.dll
 // TypeDefinitionIndex: 0
 // Namespace: RPG.GameCore
