@@ -1,4 +1,4 @@
-# NettleDumper - Zero Zenless Zone 
+# NettleDumper - Zenless Zone Zero Runtime dumper
 
 
 > [!WARNING]
